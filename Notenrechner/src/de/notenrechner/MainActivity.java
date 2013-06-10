@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.res.Resources;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,7 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
-import android.support.v4.app.NavUtils;
+
 
 public class MainActivity extends Activity {
 	Note note;
@@ -22,6 +23,7 @@ public class MainActivity extends Activity {
 	Button btnErfassen, btnLoeschen, btnAnzeigen;
 	OnClickListener lErfassen, lLoeschen, lAnzeigen;
 	ArrayAdapter<String> adapter, listenAdapter;
+	Resources res;
 	ListView lvNotenliste;
 	ArrayList<Note> notenListe;
 
@@ -29,23 +31,23 @@ public class MainActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
+		res = getResources();
+		
 		// Fach Liste
-		spFach = (Spinner) this.findViewById(R.id.spxFach);
-		String[] items = new String[] { "-", "Mathe", "Deutsch", "Englisch" };
-		adapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_spinner_item, items);
-		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spFach.setAdapter(adapter);
-		
-		//Notenauswahlliste
-		spNote = (Spinner) this.findViewById(R.id.spxNote);
-		String[] notenItems = new String[] { "1", "2", "3", "4","5","6" };
-		adapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_spinner_item, notenItems);
-		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spNote.setAdapter(adapter);
-		
+				spFach = (Spinner) this.findViewById(R.id.spxFach);
+				String[] items = res.getStringArray(R.array.fach);
+				adapter = new ArrayAdapter<String>(this,
+						android.R.layout.simple_spinner_item, items);
+				adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+				spFach.setAdapter(adapter);
+
+				//Notenauswahlliste
+				spNote = (Spinner) this.findViewById(R.id.spxNote);
+				String[] notenItems = new String[] { "1", "2", "3", "4","5","6" };
+				adapter = new ArrayAdapter<String>(this,
+						android.R.layout.simple_spinner_item, notenItems);
+				adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+				spNote.setAdapter(adapter);
 		
 		// Notenliste
 		notenListe = new ArrayList<Note>();

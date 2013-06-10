@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="fach">
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>Englisch</item>
+        <item>Religion</item>
+        <item>Sport</item>
+        <item>Computertechnik</item>
+        <item>Informationstechnik</item>       
+    </string-array>
+</resources>
