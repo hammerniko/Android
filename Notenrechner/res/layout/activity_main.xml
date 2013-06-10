@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ff00" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Fach"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spxFach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/textView1" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Datum"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/spxFach"  />
+
+    <EditText
+        android:id="@+id/tfxDatum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" 
+        android:layout_below="@+id/textView2" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:text="Note"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/tfxDatum"  />
+
+    <Spinner
+        android:id="@+id/spxNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btnxErfassen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spxNote"
+        android:text="Erfassen" />
+
+    <Button
+        android:id="@+id/btnxLoeschen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnxErfassen"
+        android:layout_alignBottom="@+id/btnxErfassen"
+        android:layout_toRightOf="@+id/btnxErfassen"
+        android:text="Löschen" />
+
+    <Button
+        android:id="@+id/btnxAnzeigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnxLoeschen"
+        android:layout_alignBottom="@+id/btnxLoeschen"
+        android:layout_toRightOf="@+id/btnxLoeschen"
+        android:text="Anzeigen" />
+
+    <ListView
+        android:id="@+id/lvxNotenliste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnxErfassen"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="22dp" >
+    </ListView>
+
+</RelativeLayout>
