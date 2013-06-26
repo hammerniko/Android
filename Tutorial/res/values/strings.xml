@@ -7,5 +7,7 @@
     <string name="title_activity_my_splash">MySplash</string>
     <string name="btTutorial1">Tutorial 1</string>
     <string name="btTutorial2">Tutorial 2</string>
+    <string name="titleTutorial1">Das Tutorial 1 beginnt</string>
+    <string name="titleTutorial2">Das Tutorial 2 beginnt</string>
 
 </resources>

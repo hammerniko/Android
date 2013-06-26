@@ -36,13 +36,15 @@ public final class R {
         public static final int activity_my_main=0x7f030000;
         public static final int activity_my_splash=0x7f030001;
         public static final int tutorial1=0x7f030002;
+        public static final int tutorial2=0x7f030003;
     }
     public static final class menu {
         public static final int my_main=0x7f080000;
         public static final int my_splash=0x7f080001;
     }
     public static final class raw {
-        public static final int satellite=0x7f040000;
+        public static final int button=0x7f040000;
+        public static final int satellite=0x7f040001;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
@@ -50,6 +52,8 @@ public final class R {
         public static final int btTutorial1=0x7f060004;
         public static final int btTutorial2=0x7f060005;
         public static final int hello_world=0x7f060002;
+        public static final int titleTutorial1=0x7f060006;
+        public static final int titleTutorial2=0x7f060007;
         public static final int title_activity_my_splash=0x7f060003;
     }
     public static final class style {
