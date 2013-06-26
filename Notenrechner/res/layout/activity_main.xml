@@ -18,15 +18,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" 
         android:layout_below="@+id/textView1" />
-    
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Datum"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_below="@+id/spxFach"  />
 
     <EditText
         android:id="@+id/tfxDatum"
@@ -38,16 +29,6 @@
 
         <requestFocus />
     </EditText>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="10dp"
-        android:text="Note"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_below="@+id/tfxDatum"  />
 
     <Spinner
         android:id="@+id/spxNote"
@@ -91,5 +72,23 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="22dp" >
     </ListView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spxFach"
+        android:text="Datum"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/tfxDatum"
+        android:text="Note"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
