@@ -41,6 +41,7 @@
         android:orientation="horizontal" >
         
     <RadioGroup
+        android:id="@+id/rgGravity"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="60"
@@ -68,6 +69,7 @@
     </RadioGroup>
 
      <RadioGroup
+         android:id="@+id/rgStyle"
          android:layout_width="fill_parent"
          android:layout_height="fill_parent"
          android:layout_weight="50"
@@ -102,7 +104,7 @@
 
     <TextView
         android:id="@+id/tvGetInput"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
