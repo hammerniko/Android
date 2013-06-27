@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -47,9 +49,29 @@ public class MyMain extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.my_main, menu);
+		super.onCreateOptionsMenu(menu);
+		// Inflate the menu; this adds items to t;he action bar if it is present.
+		MenuInflater awesome = getMenuInflater();
+		awesome.inflate(R.menu.my_main, menu);
 		return true;
 	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.menuSweet:
+			startActivity(new Intent("de.schule.hgs.hammer.SWEET"));
+			return true;
+			
+		case R.id.menuToast:
+			//...
+			return true;
+
+		}
+		
+		return false;
+	}
+	
+	
 
 }
