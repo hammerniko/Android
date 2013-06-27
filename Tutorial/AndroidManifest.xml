@@ -34,7 +34,8 @@
         
          <activity
             android:name="de.schule.hgs.hammer.Sweet"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog">
             <intent-filter>
                 <action android:name="de.schule.hgs.hammer.SWEET" />
 

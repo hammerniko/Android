@@ -9,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MyMain extends Activity {
 
@@ -65,6 +66,8 @@ public class MyMain extends Activity {
 			
 		case R.id.menuToast:
 			//...
+			Toast toast = Toast.makeText(this, "Der erste Toast",Toast.LENGTH_SHORT);
+			toast.show();
 			return true;
 
 		}
