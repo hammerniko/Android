@@ -32,6 +32,8 @@ public final class R {
         public static final int btTutorial2=0x7f090003;
         public static final int etInput=0x7f090004;
         public static final int imageView1=0x7f090001;
+        public static final int menuSweet=0x7f090010;
+        public static final int menuToast=0x7f090011;
         public static final int rbBold=0x7f09000b;
         public static final int rbCenter=0x7f090007;
         public static final int rbItalic=0x7f09000c;

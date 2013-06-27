@@ -62,15 +62,15 @@ public class TutorialOne extends Activity implements OnCheckedChangeListener {
 			break;
 		
 		case R.id.rbBold:  
-			textOut.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
+			textOut.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD),Typeface.BOLD);
 			break;	
 		
 		case R.id.rbNormal:  
-			textOut.setTypeface(Typeface.defaultFromStyle(Typeface.NORMAL));
+			textOut.setTypeface(Typeface.defaultFromStyle(Typeface.NORMAL),Typeface.NORMAL);
 			break;	
 			
 		case R.id.rbItalic:  
-			textOut.setTypeface(Typeface.defaultFromStyle(Typeface.ITALIC));
+			textOut.setTypeface(Typeface.defaultFromStyle(Typeface.ITALIC),Typeface.ITALIC);
 			break;	
 		
 		}
