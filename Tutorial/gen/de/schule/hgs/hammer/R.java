@@ -26,23 +26,26 @@ public final class R {
         public static final int nikiprofil=0x7f020002;
     }
     public static final class id {
-        public static final int btOK=0x7f09000e;
+        public static final int btOK=0x7f090011;
         public static final int btTutorial1=0x7f090002;
         public static final int btTutorial2=0x7f090003;
-        public static final int etInput=0x7f090004;
+        public static final int btTutorial3=0x7f090004;
+        public static final int btTutorial4=0x7f090005;
+        public static final int btTutorial5=0x7f090006;
+        public static final int etInput=0x7f090007;
         public static final int imageView1=0x7f090001;
-        public static final int menuSweet=0x7f09000f;
-        public static final int menuToast=0x7f090010;
-        public static final int rbBold=0x7f09000b;
-        public static final int rbCenter=0x7f090007;
-        public static final int rbItalic=0x7f09000c;
-        public static final int rbLeft=0x7f090006;
-        public static final int rbNormal=0x7f09000a;
-        public static final int rbRight=0x7f090008;
-        public static final int rgGravity=0x7f090005;
-        public static final int rgStyle=0x7f090009;
+        public static final int menuSweet=0x7f090012;
+        public static final int menuToast=0x7f090013;
+        public static final int rbBold=0x7f09000e;
+        public static final int rbCenter=0x7f09000a;
+        public static final int rbItalic=0x7f09000f;
+        public static final int rbLeft=0x7f090009;
+        public static final int rbNormal=0x7f09000d;
+        public static final int rbRight=0x7f09000b;
+        public static final int rgGravity=0x7f090008;
+        public static final int rgStyle=0x7f09000c;
         public static final int textView1=0x7f090000;
-        public static final int tvGetInput=0x7f09000d;
+        public static final int tvGetInput=0x7f090010;
     }
     public static final class layout {
         public static final int about=0x7f030000;
@@ -64,9 +67,12 @@ public final class R {
         public static final int app_name=0x7f060000;
         public static final int btTutorial1=0x7f060004;
         public static final int btTutorial2=0x7f060005;
+        public static final int btTutorial3=0x7f060006;
+        public static final int btTutorial4=0x7f060007;
+        public static final int btTutorial5=0x7f060008;
         public static final int hello_world=0x7f060002;
-        public static final int titleTutorial1=0x7f060006;
-        public static final int titleTutorial2=0x7f060007;
+        public static final int titleTutorial1=0x7f060009;
+        public static final int titleTutorial2=0x7f06000a;
         public static final int title_activity_my_splash=0x7f060003;
     }
     public static final class style {

@@ -5,8 +5,11 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Willkommen im Tutorial</string>
     <string name="title_activity_my_splash">MySplash</string>
-    <string name="btTutorial1">Tutorial 1</string>
-    <string name="btTutorial2">Tutorial 2</string>
+    <string name="btTutorial1">Radio Buttons</string>
+    <string name="btTutorial2">List View</string>
+    <string name="btTutorial3">Tutorial 3</string>
+    <string name="btTutorial4">Tutorial 4</string>
+    <string name="btTutorial5">Tutorial 5</string>
     <string name="titleTutorial1">Das Tutorial 1 beginnt</string>
     <string name="titleTutorial2">Das Tutorial 2 beginnt</string>
 
