@@ -62,6 +62,17 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        
+          <activity
+            android:name="de.schule.hgs.hammer.ListV"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="de.schule.hgs.hammer.LISTVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
        
     </application>
 

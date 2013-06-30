@@ -38,14 +38,16 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:gravity="center"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:weightSum="90" >
         
     <RadioGroup
         android:id="@+id/rgGravity"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="60"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:weightSum="50" >
 
         >
 
@@ -73,7 +75,8 @@
          android:layout_width="fill_parent"
          android:layout_height="fill_parent"
          android:layout_weight="50"
-         android:orientation="vertical" >
+         android:orientation="vertical"
+         android:weightSum="50" >
 
         >
     <RadioButton

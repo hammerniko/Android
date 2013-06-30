@@ -41,7 +41,7 @@ public class MyMain extends Activity {
 			@Override
 			public void onClick(View v) {
 
-				startActivity(new Intent("de.schule.hgs.hammer.TUTORIALTWO"));
+				startActivity(new Intent("de.schule.hgs.hammer.LISTVIEW"));
 				mpButtonClick.start();
 			}
 		});
