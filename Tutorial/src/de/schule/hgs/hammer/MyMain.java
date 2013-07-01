@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 public class MyMain extends Activity {
 
+	Button btTutorialOne, btTutorialTwo, btTutorialThree, btTutorialFour;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -22,26 +24,47 @@ public class MyMain extends Activity {
 		final MediaPlayer mpButtonClick = MediaPlayer
 				.create(this, R.raw.button);
 
-		// Button1
-		Button btTutorialOne = (Button) findViewById(R.id.btTutorial1);
-		btTutorialOne.setOnClickListener(new View.OnClickListener() {
+		// Buttons
+		btTutorialOne = (Button) findViewById(R.id.btTutorial1);
+		btTutorialTwo = (Button) findViewById(R.id.btTutorial2);
+		btTutorialThree = (Button) findViewById(R.id.btTutorial3);
+		btTutorialFour = (Button) findViewById(R.id.btTutorial4);
 
+		// Listener for Buttons
+		btTutorialOne.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-
 				startActivity(new Intent("de.schule.hgs.hammer.TUTORIALONE"));
 				mpButtonClick.start();
 			}
 		});
 
 		// Button2
-		Button btTutorialTwo = (Button) findViewById(R.id.btTutorial2);
 		btTutorialTwo.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-
 				startActivity(new Intent("de.schule.hgs.hammer.LISTVIEW"));
+				mpButtonClick.start();
+			}
+		});
+
+		// Button3
+		btTutorialThree.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// startActivity(new Intent("de.schule.hgs.hammer.LISTVIEW"));
+				mpButtonClick.start();
+			}
+		});
+
+		// Button3
+		btTutorialFour.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// startActivity(new Intent("de.schule.hgs.hammer.LISTVIEW"));
 				mpButtonClick.start();
 			}
 		});
@@ -51,7 +74,8 @@ public class MyMain extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-		// Inflate the menu; this adds items to t;he action bar if it is present.
+		// Inflate the menu; this adds items to t;he action bar if it is
+		// present.
 		MenuInflater awesome = getMenuInflater();
 		awesome.inflate(R.menu.my_main, menu);
 		return true;
@@ -63,18 +87,17 @@ public class MyMain extends Activity {
 		case R.id.menuSweet:
 			startActivity(new Intent("de.schule.hgs.hammer.SWEET"));
 			return true;
-			
+
 		case R.id.menuToast:
-			//...
-			Toast toast = Toast.makeText(this, "Der erste Toast",Toast.LENGTH_SHORT);
+			// ...
+			Toast toast = Toast.makeText(this, "Der erste Toast",
+					Toast.LENGTH_SHORT);
 			toast.show();
 			return true;
 
 		}
-		
+
 		return false;
 	}
-	
-	
 
 }
